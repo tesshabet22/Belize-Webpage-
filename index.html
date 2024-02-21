@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tessa's Belize webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./history.html">History</a>
+      <a href="./places-to-see.html">Places to See</a>
+      <a href = "./creole-words.html">Words and Phrases</a>
+    </nav>
+  </header>
+  <br>
+  <div class="slideshow-container">
+    <div class="my-slides fade">
+      <div class="number-text">1 / 3</div>
+      <img class="slideshow-image" src="images/slideshow-home-1.jpg">
+      <div id="page-title">Belize Travel Guide</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="number-text">2 / 3</div>
+      <img class="slideshow-image" src="images/slideshow-home-2.jpg">
+      <div id="page-title">Belize Travel Guide</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="number-text">3 / 3</div>
+      <img class="slideshow-image" src="images/slideshow-home-3.webp">
+      <div id="page-title">Belize Travel Guide</div>
+    </div>
+
+    <!--Next and previous buttons-->
+    <a class="prev" onclick="plus_slides(-1)">&#10094;</a>
+    <a class="next" onclick="plus_slides(+1)">&#10095;</a>
+  </div>
+  <!--Dots/circles below images-->
+  <div style="text-align:center">
+    <span class="dot" onclick="current_slide(1)"></span>
+    <span class="dot" onclick="current_slide(2)"></span>
+    <span class="dot" onclick="current_slide(3)"></span>
+  </div>
+  <section>
+  <h2 class="heading">About Belize</h2>
+  <ul class="text">
+    <li>Belize is part of two regions: Central America and the Caribbean</li>
+    <li>It has a population of about 400,000 people</li>
+    <li>There are many cultures such as Mestizo, Mayan, Creole, Garifuna, Hispanic, Lebanese, Mennonite, Chinese, East Indian and more</li>
+    <li>The Capital of Belize is Belmopan</li>
+    <li>The Official language of Belize is English with most people being trilingual speaking <b>English</b>, <b>Spanish</b> and <b>English Creole</b>(a dialect of English)</li>
+    <li>Belize is geographically diverse with many jungles, beaches, mountains, rivers, reefs, cayes and more</li>
+    <li>The avergage annual temperature is 80 degrees Fahrenheit</li>
+  </ul>
+  <img src="images/map.jpeg" alt="Location of Belize"/>
+  </section>
+  <section>
+  <h2 class="heading">Why You Should Visit</h2>
+    <p class="text">Racial harmony, religious tolerance and a relatively peaceful political culture has given Belize
+      a reputation as a friendly, laidback destination. Belize is one of Central America's most popular tourist
+      destinations. It is delightfully accessible to American travellers because the official language is English
+      and the dollar is the main currency making monetary conversions easy. There is a lot to see and a lot to do. 
+      From snorkelling in the cayes to hiking in the mountains with the opportunities to spot jaguars and other unique wildlife, 
+      you will have experiences unlike any other. 
+    </p>
+    </section>
+    <img id="map" src="images/full-map.png" alt="map of Belize">
+    <br>
+    <footer>
+      <img id="logo" src="images/belize-logo.jpg" alt="belize logo"
+        width="250"
+        height="200"/>
+      <p class="footer-text">For more information:
+      <ul class="footer-text">
+        <li>Call: (501)6106692</li>
+        <li>Email: btb@belizean.org</li>
+      </ul>
+      </p>
+    </footer>
+    </body>
+    <script src="main.js"></script>
+</html>

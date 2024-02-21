@@ -1,0 +1,199 @@
+/*custom properties*/
+:root{
+  --nav-color: rgb(102,102,102); 
+  --basic-padding: 20px; 
+}
+
+/* nav styles */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+nav{
+  list-style-type: none; 
+  padding: 8px 16px; 
+  width: 2000px; 
+  background-color: #fdf9f9;
+  margin: 0px;
+  overflow: hidden; 
+  float: left;
+  position: fixed; 
+  top: 0;
+  z-index: 1000; 
+} 
+
+nav a{
+  display: inline; 
+  color: var(--nav-color); 
+  padding: 8px 16px; 
+  text-decoration: none; 
+  border-right:1px solid var(--nav-color);
+}
+
+nav a:last-child{
+  border-right: none; 
+}
+
+/*Change the link color on hover*/
+nav a:hover{
+  background-color: #555; 
+  color: white; 
+  height: 30px;
+  margin-left: -5px; 
+}
+
+/*img styles*/
+img {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;  
+  padding-bottom: var(--basic-padding);
+  height: 300px; 
+  width: 400px; 
+}
+
+h2 {
+  background:gray; 
+  padding: var(--basic-padding); 
+}
+
+footer {
+  background: rgb(140, 240, 240); 
+  padding: var(--basic-padding);
+}
+
+/*Class styles*/
+* {box-sizing: border-box;}
+
+.heading {
+  font-weight: bolder;
+  text-align: center;
+  font-kerning: auto;
+  color: white;
+  text-shadow:  #111111 4px 4px 4px;
+}
+
+.slideshow-container {
+  overflow: hidden; 
+  max-width: 10000px; 
+  position: relative; 
+  margin: 20px 0px; 
+}
+
+.my-slides {
+  display: none; 
+}
+
+.slideshow-image {
+  size: cover; 
+  display: block; 
+  margin-left: 0px; 
+  margin-right: 0px;  
+  padding-bottom: 10px; 
+  height: 500px; 
+  width: 100%; 
+}
+
+.prev, .next {
+  cursor: pointer; 
+  position: absolute; 
+  top: 50%; 
+  width: auto; 
+  margin-top: -22px; 
+  padding: 16px; 
+  color: white; 
+  font-weight: bold; 
+  font-size: 18px; 
+  transition: 0.6s ease; 
+  border-radius: 0 3px 3px 0; 
+  user-select: none; 
+}
+
+/*Position the "next button" to the right*/ 
+.next {
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+}
+
+/* On hover, add a black background color with a little bit f see through*/
+.prev:hover, .next:hover {
+  background-color: rgb(140, 240, 240);
+}
+
+.number-text{
+  color: white; 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  font-size: 20px; 
+  padding: 10px; 
+  position: absolute;
+  top: 0; 
+  margin: 0;
+}
+
+.dot {
+  cursor: pointer; 
+  height: 15px; 
+  width: 15px; 
+  margin: 0 2px; 
+  background-color: rgb(140, 240, 240);
+  border-radius: 50%; 
+  display: inline-block; 
+  transition: background-color 0.6s ease; 
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */ 
+.fade {
+  animation-name: fade; 
+  animation-duration: 1.5s; 
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.text{
+  text-align: left;
+  color: var(--nav-color);
+  margin: 20px; 
+}
+
+.footer-text{
+  color:var(--nav-color); 
+  text-shadow: white 1px 1px 1px;
+}
+/*ID Styles*/
+#page-title{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-shadow: #111111 4px 4px 4px;
+  padding: 8px 12px;
+  background-color:rgb(140, 240, 240);
+  margin: 0; 
+  font-weight: bolder;
+  color: white; 
+
+  position: absolute; 
+  width: 100%; 
+  text-align: center; 
+  bottom: 8px; 
+}
+#logo{
+  display: inline;
+  float: right; 
+  position: relative; 
+  top: -35px; 
+  height: 200px; 
+  width: 250px; 
+}
+#map{
+  height: 350px; 
+  width: 350px; 
+}
+

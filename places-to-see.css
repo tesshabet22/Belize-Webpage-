@@ -1,0 +1,100 @@
+/*custom properties*/
+:root{
+  --nav-color: rgb(102,102,102); 
+  --basic-padding: 20px; 
+}
+/* nav styles */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+nav{
+  list-style-type: none; 
+  padding: 8px 16px; 
+  width: 2000px; 
+  background-color: #fdf9f9;
+  margin: 0px;
+  overflow: hidden; 
+  float: left;
+  position: fixed; 
+  top: 0; 
+} 
+nav a{
+  display: inline; 
+  color: var(--nav-color); 
+  padding: 8px 16px; 
+  text-decoration: none; 
+  border-right: 1px solid var(--nav-color);
+}
+nav a:last-child{
+  border-right: none; 
+}
+/*Change the link color on hover*/
+nav a:hover{
+  background-color: #555; 
+  color: white; 
+  height: 30px;
+  margin-left: -5px; 
+}
+/*img styles*/
+img{
+  display: block; 
+  margin-left: 10px;
+  padding-bottom: var(--basic-padding);
+  height: 200px;
+  width: 300px; 
+}
+h2{
+  background:gray; 
+  padding: var(--basic-padding); 
+}
+footer{
+  background: rgb(140, 240, 240); 
+  padding: var(--basic-padding);
+}
+/*Class styles*/
+/*Heading and text styles*/
+.heading{
+  font-weight: bolder;
+  text-align: center;
+  font-kerning: auto;
+  color: white;
+  text-shadow:  #111111 4px 4px 4px;
+}
+.text{
+  text-align: left;
+  color: var(--nav-color);
+  margin: var(--basic-padding) 60px;
+}
+.footer-text{
+  color:var(--nav-color); 
+  text-shadow: white 1px 1px 1px;
+}
+.text-and-image{
+  display: flex;
+  align-items: right;
+  margin: 10px; 
+}
+/*ID Styles*/
+#page-title{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  text-shadow: #111111 4px 4px 4px;
+}
+#logo{
+  display: inline;
+  float: right; 
+  position: relative; 
+  top: -35px; 
+  height: 200px; 
+  width: 250px; 
+}
+#description{
+  background-color: gray;
+  padding: 50px; 
+  margin: 50px; 
+  text-align: left;
+  color: white; 
+}
+
